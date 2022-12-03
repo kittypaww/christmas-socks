@@ -1,0 +1,13 @@
+---
+layout: default
+title: rolley polleys
+---
+<div class="marquee">
+    {% for img in site.static_files %}
+        {% if img.path contains 'assets/images' %}
+        <div class="imagebox">
+            <img src="{{ site.baseurl }}{{ img.path }}">
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>

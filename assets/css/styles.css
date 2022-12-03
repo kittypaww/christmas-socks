@@ -1,0 +1,30 @@
+body {
+    width: 4096px;
+}
+.marquee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 25px 15px;
+}
+
+.imagebox {
+    margin: -25px -25px;
+}
+
+img {
+    animation-name: wiggle;
+    animation-timing-function: steps(2);
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    width: 80%;
+}
+
+@keyframes wiggle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
